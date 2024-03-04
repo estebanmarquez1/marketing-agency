@@ -1,0 +1,70 @@
+---
+---
+<nav class="header__nav">
+    <div class="header__nav-logo">
+        <img src="/logo.svg" alt="Logo Andes Peak Marketing" />
+        <span>Thanks To Be Here</span>
+    </div>
+    <a href="#">Services</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<style>
+    nav {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+    background-color: var(--bg-color);
+    padding: 3rem;
+    gap: 2rem;
+    & a {
+        color: var(--main-color);
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        &::after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: .3rem;
+            background-color: var(--main-color);
+            transition: width 0.4s cubic-bezier(.25, .1, .25, 1);
+        }
+    }
+
+    & a:hover {
+        color: #8432ef;
+        transition: color 0.4s cubic-bezier(.25, .1, .25, 1);
+        &::after {
+            display: block;
+            content: '';
+            width: 0;
+        }
+    }
+}
+
+.header__nav-logo {
+    gap: 2rem;
+    @media (min-width: 768px) {
+        display: flex;
+    }
+    & img {
+        cursor: pointer;
+        &:hover {   
+            filter: invert(100%) sepia(121%) saturate(2873%) hue-rotate(257deg) brightness(81%) contrast(99%);
+        }
+    }
+    & span {
+        font-size: 2rem;
+        color: #a59daf;
+        white-space: nowrap;
+    }
+}
+</style>

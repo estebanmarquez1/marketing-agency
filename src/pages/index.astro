@@ -1,17 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Nav from '../components/landing/Nav.astro';
 ---
 
 <Layout>
-	<header>
-		<nav class="header__nav">
-			<div class="header__nav-logo">
-				<img src="/logo.svg" alt="Logo Andes Peak Marketing" />
-			</div>
-			<a href="#">Services</a>
-			<a href="#">About Us</a>
-			<a href="#">Contact Us</a>
-		</nav>
-		<h1>Andes Peak Marketing</h1>
+	<header>	
+		<Nav/>
+		<h1>Discover a new world for your business</h1>
 	</header>
+	<main>
+		<section class="services">
+			<h2>Services</h2>
+		</section>
+	</main>
 </Layout>
