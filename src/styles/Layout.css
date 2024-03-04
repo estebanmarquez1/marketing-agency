@@ -1,0 +1,84 @@
+/* Variables */
+:root {
+    --bg-color: #080014;
+    --main-color: #c9c3d1;
+    --main-font: 'Onest Variable', sans-serif;
+}
+
+/* Global */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+p {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: var(--main-font);
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-color);
+    padding-top: 1rem;
+}
+
+h1 {
+    font-size: 14rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+/* Header */
+header {
+    background: var(--bg-color);
+    height: 100vh;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    gap: 2rem;
+    & a {
+        color: var(--main-color);
+    }
+}
