@@ -3,5 +3,36 @@ import Nav from './Nav.astro';
 ---
 <header>
     <Nav/>
-    <h1>Discover a new world for your business</h1>
+    <div class="container">
+        <h1>Discover a new world for your business</h1>
+    </div>
 </header>
+
+
+<style>
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    header div {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+    }
+    header h1{
+        animation: hide linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 500px;
+    }
+    @keyframes hide {
+        from {
+            opacity: 1;
+            
+        }
+        to {
+            /* color: var(--bg-color); */
+            opacity: 0;
+        }
+    }
+</style>
