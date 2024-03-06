@@ -28,8 +28,8 @@ p {
 }
 
 .container {
-    width: 95%;
-    max-width: 120rem;
+    width: 100%;
+    /* max-width: 120rem; */
     margin: 0 auto;
 }
 
@@ -48,11 +48,12 @@ h1, h2, h3 {
     margin: 0;
     font-weight: 400;
     text-align: center;
-    color: var(--main-color);
+    text-transform: uppercase;
     padding-top: 1rem;
 }
 
 h1 {
+    color: var(--main-color);
     font-size: calc(min(max(6.25rem, 17.5vw), 15.75rem));
     font-weight: 700;
     text-transform: uppercase;
