@@ -1,4 +1,8 @@
 ---
+interface Props {
+    title: string;
+    description: string;
+}
 const {title, description} = Astro.props;
 ---
 <div class="services__wrap-container">
@@ -17,6 +21,8 @@ const {title, description} = Astro.props;
         }
 
         & p {
+            text-wrap: pretty;
+            color: var(--secondary-color);
             margin: 0;
             text-transform: uppercase;
         }

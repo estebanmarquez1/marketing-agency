@@ -2,6 +2,7 @@
 :root {
     --bg-color: #080014;
     --main-color: #c9c3d1;
+    --secondary-color: #8432ef;
     --main-font: 'Onest Variable', sans-serif;
 }
 
@@ -19,7 +20,9 @@ html {
 body {
     font-family: var(--main-font);
     font-size: 1.6rem;
-    line-height: 1.8;
+    h2{
+        line-height: 1.2;
+    }
 }
 
 p {
@@ -62,7 +65,7 @@ h1 {
     padding: 0;
 
     &::selection {
-        background-color: #8432ef;
+        background-color: var(--secondary-color);
     }
 }
 
@@ -71,6 +74,8 @@ h2 {
 }
 
 h3 {
+    text-align: left;
+    white-space: nowrap;
     font-size: 3rem;
 }
 

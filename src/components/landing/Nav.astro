@@ -15,6 +15,7 @@
         display: flex;
         flex-flow: column wrap;
         width: 100%;
+        height: auto;
         @media (min-width: 800px) {
             flex-direction: row;
             justify-content: space-between;
@@ -43,7 +44,7 @@
     }
 
     & a:hover {
-        color: #8432ef;
+        color: var(--secondary-color);
         transition: color 0.4s cubic-bezier(.25, .1, .25, 1);
         &::after {
             display: block;
