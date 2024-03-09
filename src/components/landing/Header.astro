@@ -1,11 +1,9 @@
 ---
 import Nav from './Nav.astro';
 ---
+<Nav/>
 <header>
-    <Nav/>
-    <div class="container">
         <h1>Discover a new world for your business</h1>
-    </div>
 </header>
 
 
@@ -14,11 +12,8 @@ import Nav from './Nav.astro';
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-    }
-    header div {
-        display: flex;
-        width: 100%;
-        align-items: flex-end;
+        height: 100vh;
+
     }
     header h1{
         animation: hide linear both;
