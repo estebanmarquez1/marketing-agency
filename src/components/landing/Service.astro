@@ -4,16 +4,17 @@ interface Props {
     description: string;
     format?: string;
     source?: string;
+    design?: string;
 }
-const {title, description, format, source} = Astro.props;
+const {title, description, format, source, design} = Astro.props;
 ---
 <div class="services__wrap-container">
     <h3>{title}</h3>
     <p>{description}</p>
-    <picture>
+    <picture class={design}>
         <source srcset={`${source}.webp`} type="image/webp"/>
         <source srcset={`${source}.${format}`} type={`image/${format}`}/>
-        <img src={`${source}.${format}`} alt={`${title} Image`} />
+        <img src={`${source}.${format}`} alt={`${title.slice(0, 10)} Image`} />
     </picture>
     <slot/>
 </div>
