@@ -1,0 +1,74 @@
+---
+
+---
+
+<section class="aboutUs">
+    <div class="decoration">
+        <h2>About Us</h2>
+    </div>
+    <div class="aboutUs__wrap">
+        <article class="test">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quibusdam aliquam tempore laudantium quis temporibus quas at,
+                facilis magnam culpa. Fugiat sapiente eveniet deleniti tempora,
+                mollitia consequatur facere harum adipisci dolor animi sequi
+                perspiciatis unde vero blanditiis. Repellat alias maiores optio
+                impedit eius tenetur voluptatum, iure odit unde fuga minus
+                provident dolorem laborum molestias, libero modi? Porro
+                expedita, ab consequuntur odio dolore ratione quo corrupti eius
+                corporis qui exercitationem ea, maiores consequatur explicabo
+                nobis magnam quisquam. Doloribus quis debitis autem. Magnam
+                quasi officiis, obcaecati nemo quis similique, possimus eius
+                doloremque, reprehenderit non voluptatibus facere laborum soluta
+                ex provident? Vitae, ea ipsa?
+            </p>
+        </article>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                voluptates assumenda pariatur vitae similique molestiae ex
+                tenetur. Soluta modi, hic voluptatem in eaque magnam aliquid,
+                quas sapiente natus delectus corporis. Delectus sit obcaecati,
+                explicabo iure corrupti minima ipsam, quas inventore ratione ab
+                provident nostrum, doloremque aliquam necessitatibus praesentium
+                exercitationem itaque at quo saepe. Fuga dolores nulla quibusdam
+                aut consequuntur ipsum libero, doloribus aperiam nam quae
+                numquam tempore quam totam ipsam illo aliquid culpa debitis
+                maxime officia. Porro aut autem sint quis distinctio harum
+                dignissimos eos optio quas ipsam est at, aperiam sit
+                exercitationem, incidunt laborum consequatur adipisci nesciunt
+                assumenda placeat?
+            </p>
+        </article>
+    </div>
+</section>
+
+<style>
+    .aboutUs {
+        height: 100vh;
+        & h2 {
+            color: var(--main-color);
+            &::after {
+                display: block;
+                content: "";
+                background-color: var(--main-color);
+                width: 97%;
+                margin: 0 auto;
+                height: 2px;
+            }
+        }
+    }
+
+    .aboutUs__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 2rem;
+    }
+
+    .aboutUs__wrap {
+        & article {
+            padding: 2rem;
+        }
+    }
+</style>
