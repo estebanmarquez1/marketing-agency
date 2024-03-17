@@ -14,7 +14,7 @@ const {title, description, format, source, design} = Astro.props;
     <picture class={design}>
         <source srcset={`${source}.webp`} type="image/webp"/>
         <source srcset={`${source}.${format}`} type={`image/${format}`}/>
-        <img src={`${source}.${format}`} alt={`${title.slice(0, 10)} Image`} />
+        <img src={`${source}.${format}`} alt={`${title} Image`} />
     </picture>
     <slot/>
 </div>
