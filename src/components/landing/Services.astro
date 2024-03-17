@@ -1,17 +1,49 @@
 ---
-import Service from './Service.astro';
+import Service from "./Service.astro";
 ---
+
 <section class="services container">
     <h2>Services</h2>
     <div class="services__wrap">
-        <Service title="E-commerce design" description="A new look balancing aesthethic and utility to facilate subscriptions or purchases"/>
-        <Service title="Prueba" description=""/>
-        <Service title="" description=""/>
-        <Service title="" description=""/>
-        <Service title="" description=""/>
-        <Service title="" description=""/>
-        <Service title="" description=""/>
-        <Service title="" description=""/>
+        <Service
+            title="E-commerce design"
+            description="A new look balancing aesthethic and utility to facilate subscriptions or purchases"
+        />
+        <Service 
+            title="Web Design Service" 
+            description="" 
+            format="png" 
+        />
+        <Service 
+            title="Branding" 
+            description="" 
+            format="png" 
+        />
+        <Service 
+            title="Marketing Strategy" 
+            description="" 
+            format="png" 
+        />
+        <Service
+            title="3D Interactive Experience"
+            description=""
+            format="png"
+        />
+        <Service
+            title="AI Chatbots for your business"
+            description=""
+            format="png"
+        />
+        <Service 
+            title="Mobile App Development" 
+            description="" 
+            format="png" 
+        />
+        <Service
+            title="We take care of your online reputation"
+            description=""
+            format="png"
+        />
     </div>
 </section>
 
@@ -35,8 +67,8 @@ import Service from './Service.astro';
         @media (min-width: 768px) {
             grid-template-columns: repeat(8, 1fr);
         }
-        grid-auto-rows: minmax(7rem, auto);
-        gap: 2rem;
+        grid-auto-rows: minmax(70px, auto);
+        gap: 24px;
         overflow: visible;
     }
 
@@ -49,5 +81,4 @@ import Service from './Service.astro';
             opacity: 1;
         }
     }
-
 </style>
